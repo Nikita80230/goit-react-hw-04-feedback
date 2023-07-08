@@ -12,7 +12,7 @@ export const App = () => {
   });
 
   const handleOptionClick = option => {
-    setFeedback({ [option]: [option] + 1 });
+    setFeedback({ ...feedback, [option]: feedback[option] + 1 });
   };
 
   // render() {
