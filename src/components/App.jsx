@@ -15,7 +15,6 @@ export const App = () => {
     setFeedback({ ...feedback, [option]: feedback[option] + 1 });
   };
 
-  // render() {
   const { good, neutral, bad } = feedback;
   const totalFeedback = good + neutral + bad;
   const positiveFeedback = Math.round((good / totalFeedback) * 100);
